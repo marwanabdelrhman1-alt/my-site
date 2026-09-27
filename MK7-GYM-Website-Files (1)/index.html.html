@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MK7 GYM</title>
+  <meta name="description" content="MK7 GYM - Membership, offers and member profile." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#home">
+      <img src="assets/logo.jpeg" alt="MK7 GYM logo">
+      <span>MK<span>7</span> GYM</span>
+    </a>
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#offers">العروض</a>
+      <a href="#plans">الباقات</a>
+      <a href="#gallery">الجيم</a>
+      <a href="#support">الدعم</a>
+    </nav>
+    <button class="btn btn-red" onclick="openLogin()">دخول الأعضاء</button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <img class="hero-bg" src="assets/gym-1.jpeg" alt="MK7 Gym">
+      <div class="hero-content">
+        <p class="eyebrow">MK7 GYM</p>
+        <h1>خليك أقوى.<br><span>ابدأ من MK7.</span></h1>
+        <p class="hero-text">كل اللي تحتاجه لتمرينك في مكان واحد — اشتراكك، عروضك، وبيانات عضويتك.</p>
+        <div class="hero-actions">
+          <button class="btn btn-red" onclick="openLogin()">دخول الأعضاء</button>
+          <a class="btn btn-outline" href="#plans">شوف الباقات</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="offers" class="section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">SPECIAL OFFERS</p>
+          <h2>العروض الحالية</h2>
+        </div>
+        <span class="live">● عروض MK7</span>
+      </div>
+      <div class="cards">
+        <article class="offer-card">
+          <span class="tag">عرض</span>
+          <h3>اشترك وابدأ التحدي</h3>
+          <p>خصومات وعروض خاصة على بعض الباقات لفترة محدودة.</p>
+          <button class="text-btn" onclick="openLogin()">اعرف التفاصيل ←</button>
+        </article>
+        <article class="offer-card featured">
+          <span class="tag">الأكثر طلبًا</span>
+          <h3>Premium Membership</h3>
+          <p>عضوية كاملة مع مزايا إضافية وInvitations حسب الباقة.</p>
+          <a class="text-btn" href="#plans">شوف الباقة ←</a>
+        </article>
+        <article class="offer-card">
+          <span class="tag">Members</span>
+          <h3>عروض للأعضاء</h3>
+          <p>تابع حسابك لمعرفة العروض المتاحة لك بشكل مباشر.</p>
+          <button class="text-btn" onclick="openLogin()">حسابي ←</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="plans" class="section dark-section">
+      <div class="section-head center">
+        <p class="eyebrow">MEMBERSHIPS</p>
+        <h2>الباقات</h2>
+        <p>الأسعار النهائية ومحتوى كل باقة نضيفهم من لوحة الإدارة.</p>
+      </div>
+      <div class="plans">
+        <article class="plan">
+          <h3>Basic</h3>
+          <div class="price">— <small>جنيه</small></div>
+          <ul><li>دخول الجيم</li><li>متابعة العضوية</li><li>حساب عضو</li></ul>
+          <button class="btn btn-outline" onclick="openLogin()">استفسر الآن</button>
+        </article>
+        <article class="plan popular">
+          <div class="popular-badge">POPULAR</div>
+          <h3>Premium</h3>
+          <div class="price">— <small>جنيه</small></div>
+          <ul><li>كل مزايا Basic</li><li>Invitations</li><li>مزايا إضافية حسب الباقة</li></ul>
+          <button class="btn btn-red" onclick="openLogin()">استفسر الآن</button>
+        </article>
+        <article class="plan">
+          <h3>Custom</h3>
+          <div class="price">— <small>جنيه</small></div>
+          <ul><li>باقة مخصصة</li><li>مزايا حسب الاتفاق</li><li>دعم الأعضاء</li></ul>
+          <button class="btn btn-outline" onclick="openLogin()">استفسر الآن</button>
+        </article>
+      </div>
+      <p class="note">* الأسعار والـInvitations هنا تجريبية إلى أن ترسل بيانات الباقات الحقيقية.</p>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">INSIDE MK7</p>
+          <h2>الجيم من جوه</h2>
+        </div>
+      </div>
+      <div class="gallery">
+        <img src="assets/gym-1.jpeg" alt="MK7 Gym 1">
+        <img src="assets/gym-2.jpeg" alt="MK7 Gym 2">
+        <img src="assets/gym-3.jpeg" alt="MK7 Gym 3">
+        <img src="assets/gym-4.jpeg" alt="MK7 Gym 4">
+        <img src="assets/gym-5.jpeg" alt="MK7 Gym 5">
+      </div>
+    </section>
+
+    <section id="support" class="support section">
+      <div>
+        <p class="eyebrow">SUPPORT</p>
+        <h2>محتاج مساعدة؟</h2>
+        <p>هنحط هنا أرقام الدعم، واتساب، ومواعيد العمل وموقع الفرع.</p>
+      </div>
+      <div class="support-boxes">
+        <div><b>📞 الدعم</b><span>أضف الرقم هنا</span></div>
+        <div><b>💬 WhatsApp</b><span>أضف رقم الواتساب هنا</span></div>
+        <div><b>📍 Location</b><span>أضف عنوان MK7 هنا</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/logo.jpeg" alt="MK7">
+    <span>© 2026 MK7 GYM — All rights reserved.</span>
+  </footer>
+
+  <!-- Login Modal -->
+  <div class="modal" id="loginModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="close" onclick="closeLogin()">×</button>
+      <img src="assets/logo.jpeg" class="modal-logo" alt="MK7">
+      <p class="eyebrow">MEMBER LOGIN</p>
+      <h2>دخول الأعضاء</h2>
+      <p class="muted">ادخل بيانات حسابك للوصول لبروفايلك.</p>
+      <label>رقم الموبايل</label>
+      <input id="phone" type="tel" placeholder="01xxxxxxxxx">
+      <label>كلمة المرور</label>
+      <input id="password" type="password" placeholder="••••">
+      <button class="btn btn-red full" onclick="login()">تسجيل الدخول</button>
+      <p id="loginError" class="error"></p>
+      <small class="demo">نسخة تجريبية: 01000000000 / 1234</small>
+    </div>
+  </div>
+
+  <!-- Profile Modal -->
+  <div class="modal" id="profileModal" aria-hidden="true">
+    <div class="profile-card">
+      <button class="close" onclick="closeProfile()">×</button>
+      <div class="profile-top">
+        <img src="assets/logo.jpeg" alt="MK7">
+        <div><p class="eyebrow">MY PROFILE</p><h2 id="memberName">Marwan</h2><span id="memberPlan">Premium</span></div>
+      </div>
+      <div class="stats">
+        <div><span>⏳</span><b id="daysLeft">23</b><small>يوم متبقي</small></div>
+        <div><span>🎟️</span><b id="invites">4</b><small>Invitations</small></div>
+        <div><span>📅</span><b id="expiry">20/10</b><small>تاريخ الانتهاء</small></div>
+      </div>
+      <div class="member-details">
+        <p><span>رقم العضوية</span><b id="memberId">MK7-00124</b></p>
+        <p><span>بداية الاشتراك</span><b>20/09/2026</b></p>
+        <p><span>حالة العضوية</span><b class="active">Active</b></p>
+      </div>
+      <button class="btn btn-outline full" onclick="closeProfile()">إغلاق</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
